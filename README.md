@@ -10,7 +10,7 @@ It uses Retrieval-Augmented Generation (RAG) to analyze user-entered symptoms an
 - Python
 - LangChain
 - Flask
-- OpenAI GPT
+- GROQ
 - Pinecone (Vector Database)
 - Docker
 - AWS (EC2, ECR)
@@ -51,9 +51,8 @@ pip install -r requirements.txt
 Create a `.env` file in the root directory and add:
 
 ```
-PINECONE_API_KEY=pcsk_6zS5Q8_HrHbAovaaHNszkMazFeE7gPH5N3u3eosEAPhGXTWDobEiAKaGgG************
-OPENAI_API_KEY=sk-proj-X0TUsl6o2IFfLb9SxLyXOK6feDqeK2mY2AxbxIsCqfqJlGTcNhbvG8q1ED2PnO7Pok7wAbCymUyfDpd9RmfaLD39T6zn2h1jqunGB2xR_*************
-```
+PINECONE_API_KEY=***************************************************************************
+GROQ_API_KEY=*******************************************************************************
 
 ---
 
@@ -79,7 +78,7 @@ python app.py
 Now open your browser:
 
 ```
-http://localhost:5000
+http://127.0.0.1:8080/?
 ```
 
 ---
@@ -207,7 +206,7 @@ Add:
 - AWS_DEFAULT_REGION
 - ECR_REPO
 - PINECONE_API_KEY
-- OPENAI_API_KEY
+- GROQ_API_KEY
 
 ---
 
@@ -222,7 +221,7 @@ Add:
 
 # 📌 Features
 
-- PDF-based medical knowledge
+- PDF-based Symptom checker
 - RAG pipeline
 - Vector search with Pinecone
 - Cloud deployment ready
