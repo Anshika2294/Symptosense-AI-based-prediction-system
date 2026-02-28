@@ -49,8 +49,9 @@ pip install -r requirements.txt
 Create a `.env` file in the root directory and add:
 
 ```
-PINECONE_API_KEY=***************************************************************************
-GROQ_API_KEY=*******************************************************************************
+PINECONE_API_KEY=your_pinecone_api_key
+OPENAI_API_KEY=your_openai_api_key
+```
 
 ---
 
